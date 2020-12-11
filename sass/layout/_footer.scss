@@ -1,0 +1,27 @@
+.footer{
+    background: rgb(41, 40, 40);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    &__logo{
+        display: flex;
+        color: white;
+        max-width: 200px;
+    }
+    &__action{
+        display: flex;
+       
+        max-width: 100%;
+        font-size: 15px;
+    }
+    &__icon{
+        flex-basis: 30px;
+        padding-top: 10px;
+    }
+    &__text{
+        padding-top: 5px;
+    }
+    }

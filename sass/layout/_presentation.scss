@@ -1,0 +1,40 @@
+.presentation{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    &__text{
+        display: block;
+        font-size: 18px;
+        font-weight: 900;
+        margin-left: 30px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    &__options{
+        display: flex;
+        height: 30px;
+        background-color: #f1f1f1;
+        margin-top: 20px;
+        max-width: 100%;
+        border-radius: 25px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        font-size: 15px;
+        padding-left: 35px;
+    }
+    &__icon{
+        flex-basis: 30px;
+
+        
+    }
+    &__expl{
+        float: left;
+        text-align: left;
+        column-span: 3;
+    }
+
+}
