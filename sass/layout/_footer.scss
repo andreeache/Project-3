@@ -26,5 +26,16 @@
     }
     &__text{
         padding-top: 5px;
+            & a{
+                text-decoration: none;
+                color: white;
+        } 
+        & a:hover{
+            color: white;
+        }
     }
+
+    #contact{
+        color: white;
+
     }
