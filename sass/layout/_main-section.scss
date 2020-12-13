@@ -14,10 +14,11 @@
         margin-bottom: 20px;
     }
     &__card{
+        display: flex;
+        flex-wrap: wrap;
         background-color: white;
         box-shadow: 5px 5px 5px #e2e2e2;
         border-radius: 25px;
-        padding: 4px;
         height: 200px;
         min-width: 180px;
         margin-bottom: 20px;
@@ -30,15 +31,20 @@
         border-top-right-radius: inherit;
     }
     &__restaurant-name{
+        width: 100%;
         font-weight: bold;
         padding-left: 5px;
+        margin: 10px;
     }   
     &__location{
         padding-left: 5px;
+        margin: 10px;
+        width: 80%;
     }
     &__heart{
         float: right;
         padding-right: 10px;
+        justify-self: flex-end;
     }
 
 }
