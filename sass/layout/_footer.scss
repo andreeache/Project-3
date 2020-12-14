@@ -12,11 +12,10 @@
         height: 10px;
         margin-bottom: 20px;
         filter: invert(100%);
-  -webkit-filter: invert(100%);
+        color: white;
     }
     &__action{
         display: flex;
-       
         max-width: 100%;
         font-size: 15px;
     }
@@ -37,5 +36,6 @@
 
     #contact{
         color: white;
-
+        margin-top: 10px;
+    }
     }

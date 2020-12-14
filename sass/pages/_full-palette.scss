@@ -1,25 +1,33 @@
 .restaurant-navbar{
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
-    justify-content: space-around;
+    width: 100%;
+    margin: 10px;
     &__logo{
         width: 160px;
         height: 25px;
+        margin-right: 20vw;
     }
+}
+
+.previous{
+    width: 20px;
+    margin-right: 20vw;
+}
+
+.restaurant__image{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
 }
 
 .restaurant{
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: column;
     background: #dfdede;
     justify-content: space-between;
-    &__image{
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
-    }
     &__name{
         display: flex;
         justify-content: space-between;
@@ -29,63 +37,55 @@
         font-family: 'Shrikhand';
         margin-bottom: 30px;
         margin-top: 20px;
-        border-radius: 25%;
     }
     
 }
 
 .menu{
-    display: flex;
     &__course-type{
         display: flex;
         flex-direction: column;
+        align-content: center;
     }
     &__title{
         text-transform: uppercase;
-        margin-bottom: 10px;
-        border-bottom: 2px solid $color-tertiary;
-        margin-left: 10px;
+        margin-left: 15px;
     }
     &__dish{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         background-color: white;
         padding-top: 10px;
         padding-bottom: 10px;
         padding: 5px;
-        width: 90%;
+        width: auto;
         margin: 10px;
         border-radius: 20px;
         margin-bottom: 20px;
+        padding: 15px;
     }
     &__dish-name{
         width: 100%;
         font-size: 15px;
         font-weight: 900;
-        padding-left: 10px;
-        padding-top: 10px;
-    }
-    &__details{
-        display: flex;
-        justify-content: space-between;
-        padding-left: 10px;
-        margin-top: 5px;
-        margin-bottom: 10px;
+        padding-bottom: 10px;
+        
     }
     
     &__dish-description{
         width: 100%;
         font-size: 8px;
+         
     }    
     &__price{
-        padding-left: 20px;
         align-self: flex-end;
         margin-right: 5px;
-        float: right;
+        justify-self: flex-end;
     }
     &__order-btn{
         background: $color-secondary;
-        width: 220px;
+        width: 185px;
         border-radius: 25px;
         height: 50px;
         color: white;
@@ -94,4 +94,13 @@
         margin-bottom: 55px;
         align-self: center;
     }
+}
+
+hr{
+display: block;
+border: solid 2px $color-tertiary;
+width: 40px;
+text-align: left;
+justify-self: left;
+margin-left: 15px;
 }
