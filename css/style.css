@@ -93,11 +93,11 @@ a {
 }
 .presentation__text {
   display: block;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 900;
   margin-left: 30px;
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .presentation__options {
   display: flex;
@@ -108,16 +108,44 @@ a {
   border-radius: 25px;
   padding-top: 25px;
   padding-bottom: 20px;
-  font-size: 15px;
-  padding-left: 35px;
+  font-size: 18px;
+  padding-left: 15px;
 }
 .presentation__icon {
   flex-basis: 30px;
+  padding-right: 10px;
 }
 .presentation__expl {
   float: left;
   text-align: left;
   column-span: 3;
+}
+
+ol {
+  list-style: none;
+  counter-reset: mycounter;
+}
+
+li {
+  counter-increment: mycounter;
+  margin: 0.25rem;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+}
+
+li::before {
+  content: counter(mycounter);
+  background: #9356DC;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  margin-right: 0.5rem;
+  float: left;
+  margin-top: 20px;
+  margin-left: -15px;
 }
 
 .main-section {
