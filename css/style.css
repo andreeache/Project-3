@@ -71,7 +71,7 @@ a {
   align-self: center;
 }
 .nav__explore-btn {
-  background: #FF79DA;
+  background-image: linear-gradient(to right, #FF79DA, #9356DC);
   width: 220px;
   border-radius: 25px;
   height: 50px;
@@ -80,6 +80,7 @@ a {
   margin-top: 33px;
   margin-bottom: 55px;
   align-self: center;
+  font-size: 16px;
 }
 
 .presentation {
@@ -152,7 +153,7 @@ li::before {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   background: #f1f1f1;
   padding-top: 55px;
   padding-left: 20px;
@@ -181,16 +182,31 @@ li::before {
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
 }
+.main-section__new {
+  background: #99E2D0;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  padding-top: 10px;
+  color: green;
+  font-size: 18px;
+  position: absolute;
+  right: 20px;
+  margin-top: 20px;
+  margin-right: 30px;
+}
 .main-section__restaurant-name {
   width: 100%;
   font-weight: bold;
   padding-left: 5px;
   margin: 10px;
+  margin-bottom: 1px;
 }
 .main-section__location {
   padding-left: 5px;
   margin: 10px;
   width: 80%;
+  margin-bottom: 20px;
 }
 .main-section__heart {
   float: right;
@@ -202,7 +218,7 @@ li::before {
 
 .footer {
   background: #292828;
-  width: 100%;
+  width: auto;
   color: white;
   display: flex;
   flex-wrap: wrap;
@@ -212,10 +228,12 @@ li::before {
 }
 .footer__logo {
   width: 90px;
-  height: 10px;
+  height: 20px;
   margin-bottom: 20px;
   filter: invert(100%);
   color: white;
+  fill: white;
+  filter: invert(50%) brightness(200%);
 }
 .footer__action {
   display: flex;
@@ -262,6 +280,19 @@ li::before {
   width: 100%;
   height: 220px;
   object-fit: cover;
+  margin-bottom: -35px;
+}
+
+.restaurant-page {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: #dfdede;
+  justify-content: space-between;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: absolut;
 }
 
 .restaurant {
@@ -271,13 +302,15 @@ li::before {
   flex-direction: column;
   background: #dfdede;
   justify-content: space-between;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 .restaurant__name {
   display: flex;
   justify-content: space-between;
   margin-left: 20px;
   margin-right: 30px;
-  font-size: 20px;
+  font-size: 25px;
   font-family: "Shrikhand";
   margin-bottom: 30px;
   margin-top: 20px;
@@ -322,7 +355,7 @@ li::before {
   justify-self: flex-end;
 }
 .menu__order-btn {
-  background: #FF79DA;
+  background-image: linear-gradient(to right, #FF79DA, #9356DC);
   width: 185px;
   border-radius: 25px;
   height: 50px;
@@ -331,6 +364,8 @@ li::before {
   margin-top: 33px;
   margin-bottom: 55px;
   align-self: center;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 hr {
@@ -340,6 +375,10 @@ hr {
   text-align: left;
   justify-self: left;
   margin-left: 15px;
+}
+
+.fa-heart:hover {
+  color: red !important;
 }
 
 /*# sourceMappingURL=style.css.map */

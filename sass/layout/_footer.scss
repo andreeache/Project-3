@@ -1,18 +1,21 @@
 .footer{
     background: rgb(41, 40, 40);
-    width: 100%;
+    width: auto;
     color: white;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
+  
     &__logo{
         width: 90px;
-        height: 10px;
+        height: 20px;
         margin-bottom: 20px;
         filter: invert(100%);
         color: white;
+        fill: white;
+        filter: invert(50%) brightness(200%)  ;
     }
     &__action{
         display: flex;
