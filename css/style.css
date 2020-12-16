@@ -130,8 +130,9 @@ ol {
 li {
   counter-increment: mycounter;
   margin: 0.25rem;
-  background-color: #f1f1f1;
+  background-color: #f6f6f6;
   border-radius: 20px;
+  box-shadow: 6px 6px #e4e2e2;
 }
 
 li::before {
@@ -217,7 +218,7 @@ li::before {
 }
 
 .footer {
-  background: #292828;
+  background: #383838;
   width: auto;
   color: white;
   display: flex;

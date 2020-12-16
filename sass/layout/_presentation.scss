@@ -25,6 +25,7 @@
         padding-bottom: 20px;
         font-size: 18px;
         padding-left: 15px;
+       
     }
     &__icon{
         flex-basis: 30px;
@@ -47,8 +48,9 @@ ol {
   li {
     counter-increment: mycounter;
     margin: 0.25rem;
-    background-color: #f1f1f1;
+    background-color: rgb(246, 246, 246);
     border-radius: 20px;
+    box-shadow: 6px 6px #e4e2e2;
   }
   li::before {
     content: counter(mycounter);
@@ -63,4 +65,5 @@ ol {
     float: left;
     margin-top: 20px;
     margin-left: -15px;
+    
   }
