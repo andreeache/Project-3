@@ -3,16 +3,17 @@
     flex-wrap: wrap;
     width: 100%;
     margin: 10px;
+    justify-content: center;
     &__logo{
         width: 160px;
         height: 25px;
-        margin-right: 20vw;
+        justify-self: center;
     }
 }
 
 .previous{
-    width: 20px;
-    margin-right: 20vw;
+   position: absolute;
+   left: 20px;
 }
 
 .restaurant__image{
@@ -103,7 +104,8 @@
         justify-self: flex-end;
     }
     &__order-btn{
-        background-image: linear-gradient(to right, $color-secondary, $color-primary);
+        background-image: linear-gradient(to bottom, $color-secondary, $color-primary);
+
         width: 185px;
         border-radius: 25px;
         height: 50px;
@@ -114,8 +116,54 @@
         align-self: center;
         font-size: 16px;
         font-weight: bold;
-        
+        transition-property: filter;
+       transition-duration: 1s;
+       box-shadow: 5px 5px 5px #c5c4c4;
+       cursor: pointer;
+       &:hover{
+        box-shadow: 5px 5px 2px  #c0c0c0;
+             filter: brightness(105%);
+       }
     }
+}
+
+.entrees{
+    animation-name: entrees;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes entrees{
+    0% {opacity:0}
+    100% {opacity: 1}
+}
+
+.main{
+    animation-name: main;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes main{
+    0% {opacity:0}
+    100% {opacity: 1}
+}
+
+.desserts{
+    animation-name: desserts;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-delay: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes desserts{
+    0% {opacity:0}
+    100% {opacity: 1}
 }
 
 hr{
@@ -126,9 +174,22 @@ text-align: left;
 justify-self: left;
 margin-left: 15px;
 }
+.fa-heart{
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    
+}
 
-.fa-heart:hover{
-    color:red !important;
+ .full-heart{
+     color: transparent !important;
+     transition-property: color;
+     transition-duration: 2s;
  }
+
+ .full-heart:hover{
+    color: $color-primary !important;
+ }
+ 
  
   

@@ -17,7 +17,7 @@
     &__options{
         display: flex;
         height: 30px;
-        background-color: #f1f1f1;
+        background-color: rgb(246, 246, 246);
         margin-top: 20px;
         max-width: 100%;
         border-radius: 25px;
@@ -25,11 +25,20 @@
         padding-bottom: 20px;
         font-size: 18px;
         padding-left: 15px;
+     
        
     }
     &__icon{
         flex-basis: 30px;
         padding-right: 10px;
+        // transition-property: color;
+        // transition-duration: 2s;
+        cursor: pointer;
+        &:hover{
+            color: $color-primary !important;
+           
+
+        }
 
         
     }
@@ -50,7 +59,13 @@ ol {
     margin: 0.25rem;
     background-color: rgb(246, 246, 246);
     border-radius: 20px;
-    box-shadow: 6px 6px #e4e2e2;
+    box-shadow: 6px 6px 10px #e4e2e2;
+    cursor: pointer;
+    &:hover{
+        filter: brightness(97%);
+        box-shadow: 6px 6px 4px #e4e2e2;
+
+    }
   }
   li::before {
     content: counter(mycounter);
@@ -67,3 +82,5 @@ ol {
     margin-left: -15px;
     
   }
+
+  

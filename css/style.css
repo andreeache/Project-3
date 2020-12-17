@@ -71,7 +71,7 @@ a {
   align-self: center;
 }
 .nav__explore-btn {
-  background-image: linear-gradient(to right, #FF79DA, #9356DC);
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   width: 220px;
   border-radius: 25px;
   height: 50px;
@@ -81,6 +81,14 @@ a {
   margin-bottom: 55px;
   align-self: center;
   font-size: 16px;
+  transition-property: opacity;
+  transition-duration: 0.1;
+  box-shadow: 5px 5px 7px #d7d5d5;
+  cursor: pointer;
+}
+.nav__explore-btn:hover {
+  box-shadow: 5px 5px 3px #d7d5d5;
+  opacity: 0.9;
 }
 
 .presentation {
@@ -103,7 +111,7 @@ a {
 .presentation__options {
   display: flex;
   height: 30px;
-  background-color: #f1f1f1;
+  background-color: #f6f6f6;
   margin-top: 20px;
   max-width: 100%;
   border-radius: 25px;
@@ -115,6 +123,10 @@ a {
 .presentation__icon {
   flex-basis: 30px;
   padding-right: 10px;
+  cursor: pointer;
+}
+.presentation__icon:hover {
+  color: #9356DC !important;
 }
 .presentation__expl {
   float: left;
@@ -132,7 +144,12 @@ li {
   margin: 0.25rem;
   background-color: #f6f6f6;
   border-radius: 20px;
-  box-shadow: 6px 6px #e4e2e2;
+  box-shadow: 6px 6px 10px #e4e2e2;
+  cursor: pointer;
+}
+li:hover {
+  filter: brightness(97%);
+  box-shadow: 6px 6px 4px #e4e2e2;
 }
 
 li::before {
@@ -265,16 +282,17 @@ li::before {
   flex-wrap: wrap;
   width: 100%;
   margin: 10px;
+  justify-content: center;
 }
 .restaurant-navbar__logo {
   width: 160px;
   height: 25px;
-  margin-right: 20vw;
+  justify-self: center;
 }
 
 .previous {
-  width: 20px;
-  margin-right: 20vw;
+  position: absolute;
+  left: 20px;
 }
 
 .restaurant__image {
@@ -356,7 +374,7 @@ li::before {
   justify-self: flex-end;
 }
 .menu__order-btn {
-  background-image: linear-gradient(to right, #FF79DA, #9356DC);
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   width: 185px;
   border-radius: 25px;
   height: 50px;
@@ -367,8 +385,64 @@ li::before {
   align-self: center;
   font-size: 16px;
   font-weight: bold;
+  transition-property: filter;
+  transition-duration: 1s;
+  box-shadow: 5px 5px 5px #c5c4c4;
+  cursor: pointer;
+}
+.menu__order-btn:hover {
+  box-shadow: 5px 5px 2px #c0c0c0;
+  filter: brightness(105%);
 }
 
+.entrees {
+  animation-name: entrees;
+  animation-duration: 1s;
+  opacity: 0;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes entrees {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main {
+  animation-name: main;
+  animation-duration: 2s;
+  opacity: 0;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes main {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.desserts {
+  animation-name: desserts;
+  animation-duration: 2s;
+  opacity: 0;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes desserts {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 hr {
   display: block;
   border: solid 2px #99E2D0;
@@ -378,8 +452,20 @@ hr {
   margin-left: 15px;
 }
 
-.fa-heart:hover {
-  color: red !important;
+.fa-heart {
+  cursor: pointer;
+  position: absolute;
+  right: 50px;
+}
+
+.full-heart {
+  color: transparent !important;
+  transition-property: color;
+  transition-duration: 2s;
+}
+
+.full-heart:hover {
+  color: #9356DC !important;
 }
 
 /*# sourceMappingURL=style.css.map */
