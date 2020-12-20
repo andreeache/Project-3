@@ -39,15 +39,17 @@
            
 
         }
-
-        
     }
     &__expl{
         float: left;
         text-align: left;
         column-span: 3;
     }
-
+    &:hover {
+        &__icon {
+            color: $color-primary !important;
+        }
+    }
 }
 
 ol {
@@ -64,7 +66,6 @@ ol {
     &:hover{
         filter: brightness(97%);
         box-shadow: 6px 6px 4px #e4e2e2;
-
     }
   }
   li::before {

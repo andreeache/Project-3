@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 10px;
+  padding: 0px;
   font-family: "Roboto";
 }
 
@@ -132,6 +132,9 @@ a {
   float: left;
   text-align: left;
   column-span: 3;
+}
+.presentation:hover__icon {
+  color: #9356DC !important;
 }
 
 ol {
@@ -414,29 +417,54 @@ li::before {
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
   padding: 5px;
   width: auto;
   margin: 10px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  padding: 15px;
+  border-radius: 15px;
+  padding-left: 15px;
+}
+.menu__dish-div {
+  display: flex;
+  padding-bottom: 10px;
 }
 .menu__dish-name {
   width: 100%;
   font-size: 15px;
   font-weight: 900;
   padding-bottom: 10px;
+  padding-top: 5px;
 }
 .menu__dish-description {
   width: 100%;
   font-size: 8px;
+  padding-bottom: 10px;
+}
+.menu__dish-pricecheck {
+  display: flex;
 }
 .menu__price {
+  width: 70px;
   align-self: flex-end;
-  margin-right: 5px;
   justify-self: flex-end;
+  margin-right: -25px;
+}
+.menu__checkmark {
+  width: 60px;
+  background: #99E2D0;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -5px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+}
+.menu__icon {
+  font-size: 30px;
+  margin-top: 15px;
+  color: white !important;
+  overflow: hidden;
 }
 .menu__order-btn {
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
