@@ -31,24 +31,13 @@
     &__icon{
         flex-basis: 30px;
         padding-right: 10px;
-        // transition-property: color;
-        // transition-duration: 2s;
         cursor: pointer;
-        &:hover{
-            color: $color-primary !important;
-           
-
-        }
+        
     }
     &__expl{
         float: left;
         text-align: left;
         column-span: 3;
-    }
-    &:hover {
-        &__icon {
-            color: $color-primary !important;
-        }
     }
 }
 
@@ -66,8 +55,13 @@ ol {
     &:hover{
         filter: brightness(97%);
         box-shadow: 6px 6px 4px #e4e2e2;
+       & .presentation__icon{
+            color: $color-primary !important;
+        }
     }
   }
+
+  
   li::before {
     content: counter(mycounter);
     background: $color-primary;
@@ -84,4 +78,4 @@ ol {
     
   }
 
-  
+ 
