@@ -420,9 +420,11 @@ li::before {
   margin: 10px;
   border-radius: 15px;
   padding-left: 15px;
+  cursor: pointer;
 }
 .menu__dish-div {
   display: flex;
+  flex-direction: column;
   padding-bottom: 10px;
 }
 .menu__dish-name {
@@ -449,9 +451,10 @@ li::before {
   align-self: flex-end;
   justify-self: flex-end;
   margin-right: -25px;
+  padding-bottom: 10px;
 }
 .menu__checkmark {
-  width: 60px;
+  width: 0px;
   background: #99E2D0;
   height: auto;
   display: flex;
@@ -461,12 +464,17 @@ li::before {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   overflow: hidden;
+  transition-property: width;
+  transition-duration: 0.5s;
 }
 .menu__icon {
   font-size: 30px;
-  margin-top: 15px;
+  margin-top: 20px;
   color: white !important;
   overflow: hidden;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  animation-fill-mode: backwards;
 }
 .menu__order-btn {
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
@@ -561,6 +569,13 @@ hr {
 
 .full-heart:hover {
   color: #9356DC !important;
+}
+
+.menu__dish:hover .menu__checkmark {
+  width: 70px;
+}
+.menu__dish:hover .menu__icon {
+  transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=style.css.map */
