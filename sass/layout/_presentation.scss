@@ -17,7 +17,8 @@
     &__options{
         display: flex;
         height: 30px;
-        background-color: rgb(246, 246, 246);
+        // background-color: rgb(246, 246, 246);
+        background-color: lighten($color-primary, 36%);
         margin-top: 20px;
         max-width: 100%;
         border-radius: 25px;
@@ -48,7 +49,8 @@ ol {
   li {
     counter-increment: mycounter;
     margin: 0.25rem;
-    background-color: rgb(246, 246, 246);
+    // background-color: rgb(246, 246, 246);
+    background-color: lighten($color-primary, 36%);
     border-radius: 20px;
     box-shadow: 6px 6px 10px #e4e2e2;
     cursor: pointer;
@@ -60,7 +62,6 @@ ol {
         }
     }
   }
-
   
   li::before {
     content: counter(mycounter);

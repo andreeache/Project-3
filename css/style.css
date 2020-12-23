@@ -111,7 +111,7 @@ a {
 .presentation__options {
   display: flex;
   height: 30px;
-  background-color: #f6f6f6;
+  background-color: #f4eefc;
   margin-top: 20px;
   max-width: 100%;
   border-radius: 25px;
@@ -139,7 +139,7 @@ ol {
 li {
   counter-increment: mycounter;
   margin: 0.25rem;
-  background-color: #f6f6f6;
+  background-color: #f4eefc;
   border-radius: 20px;
   box-shadow: 6px 6px 10px #e4e2e2;
   cursor: pointer;
@@ -305,7 +305,7 @@ li::before {
   top: 10px;
   justify-content: center;
   animation-name: case;
-  animation-duration: 3s;
+  animation-duration: 1s;
   opacity: 1;
   animation-fill-mode: forwards;
 }
@@ -330,7 +330,7 @@ li::before {
 .main-page {
   animation-name: main-page;
   opacity: 0;
-  animation-delay: 3s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
@@ -412,7 +412,6 @@ li::before {
 }
 .menu__dish {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   background-color: white;
   padding: 5px;
@@ -424,22 +423,26 @@ li::before {
 }
 .menu__dish-div {
   display: flex;
+  width: auto;
   flex-direction: column;
-  padding-bottom: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 .menu__dish-name {
-  width: 100%;
+  width: auto;
   font-size: 15px;
   font-weight: 900;
   padding-bottom: 10px;
   padding-top: 5px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu__dish-description {
-  width: 100%;
+  width: auto;
   font-size: 8px;
   padding-bottom: 10px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -451,7 +454,7 @@ li::before {
   align-self: flex-end;
   justify-self: flex-end;
   margin-right: -25px;
-  padding-bottom: 10px;
+  padding-bottom: 4px;
 }
 .menu__checkmark {
   width: 0px;

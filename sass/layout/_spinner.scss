@@ -23,7 +23,7 @@
     top: 10px;
     justify-content: center;
     animation-name: case;
-    animation-duration: 3s;
+    animation-duration: 1s;
     opacity: 1;
     animation-fill-mode: forwards;
 }
@@ -39,7 +39,7 @@
 .main-page{
     animation-name: main-page;
     opacity: 0;
-    animation-delay: 3s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
