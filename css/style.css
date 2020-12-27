@@ -441,7 +441,6 @@ li::before {
   display: inline-block;
   width: auto;
   font-size: 13px;
-  padding-bottom: 10px;
 }
 .menu__dish-pricecheck {
   display: flex;
@@ -556,14 +555,30 @@ hr {
   right: 50px;
 }
 
+.empty-heart {
+  opacity: 90%;
+}
+
 .full-heart {
-  color: transparent !important;
-  transition-property: color;
-  transition-duration: 2s;
+  background-clip: text;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0%;
+  transition-property: opacity;
+  transition-duration: 1s;
 }
 
 .full-heart:hover {
-  color: #9356DC !important;
+  opacity: 100%;
+}
+
+.empty-heart {
+  transition: opacity;
+}
+
+.empty-heart:hover {
+  opacity: 0%;
 }
 
 .menu__dish:hover .menu__checkmark {
