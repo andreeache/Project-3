@@ -56,6 +56,7 @@
         font-family: 'Shrikhand';
         margin-bottom: 30px;
         margin-top: 20px;
+       
     } 
 }
 
@@ -215,10 +216,15 @@ text-align: left;
 justify-self: left;
 margin-left: 15px;
 }
+
+.title-heart{
+    align-self: flex-end;
+}
+
 .fa-heart{
     cursor: pointer;
     position: absolute;
-    right: 50px;
+    right: 45px;
 }
 
 .empty-heart{
