@@ -433,22 +433,21 @@ li::before {
 }
 .menu__dish {
   display: flex;
-  justify-content: space-between;
   background-color: white;
   padding: 5px;
-  width: auto;
+  width: inherit;
   margin: 10px;
   border-radius: 15px;
   padding-left: 15px;
   cursor: pointer;
+  overflow: overlay;
 }
 .menu__dish-div {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  flex-direction: column;
+  display: grid;
+  max-width: 100%;
   padding-top: 4px;
   padding-bottom: 4px;
+  flex: 1;
 }
 .menu__dish-name {
   display: inline-block;
@@ -457,20 +456,25 @@ li::before {
   font-weight: 900;
   padding-bottom: 10px;
   padding-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__dish-description {
   display: inline-block;
-  width: auto;
+  max-width: 100%;
   font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__dish-pricecheck {
   display: flex;
 }
 .menu__price {
-  width: 70px;
   align-self: flex-end;
   justify-self: flex-end;
-  margin-right: -25px;
+  margin-right: 15px;
   padding-bottom: 4px;
 }
 .menu__checkmark {
