@@ -254,16 +254,16 @@ margin-left: 15px;
     opacity: 0%;
 }
 
- .menu__dish:hover{
-     & .menu__checkmark{
-         width: 70px;
-     }
-     & .menu__icon{
-         transform: rotate(360deg);
-         transition-property: transform;
-         transition-duration: 0.5s;
-         animation-fill-mode: backwards;
-     }
- }
+.menu__dish:hover{
+    & .menu__checkmark{
+        width: 70px;
+    }
+    & .menu__icon{
+        transform: rotate(360deg);
+        transition-property: transform;
+        transition-duration: 0.5s;
+        animation-fill-mode: backwards;
+    }
+}
 
  
