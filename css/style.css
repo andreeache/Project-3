@@ -268,7 +268,6 @@ li::before {
   width: 90px;
   height: 20px;
   margin-bottom: 20px;
-  filter: invert(100%);
   color: white;
   fill: white;
   filter: invert(50%) brightness(200%);
@@ -586,6 +585,7 @@ hr {
 }
 
 .full-heart {
+  background-clip: content-box;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
